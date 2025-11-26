@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sky's Sweets</title>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
+<!-- Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- content starts here -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm position-relative">
+  <div class="container position-relative">
+
+    <!-- Left Links -->
+    <div class="navbar-nav d-none d-lg-flex">
+      <a class="nav-link px-3" href="#hero">Home</a>
+      <a class="nav-link px-3" href="#about">About</a>
+      <a class="nav-link px-3" href="#menu">Menu</a>
+    </div>
+
+    <!-- Right-Side Overhanging Logo -->
+    <a class="navbar-brand position-absolute top-100 end-0 translate-middle-y me-3" href="#hero">
+      <img src="images/skyslogo.png" alt="Bakery Logo" class="logo-center-right">
+    </a>
+
+    <!-- Right Links -->
+    <div class="navbar-nav d-none d-lg-flex ms-auto me-5">
+      <a class="nav-link px-3" href="#gallery">Gallery</a>
+      <a class="nav-link px-3" href="#contact">Contact</a>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Mobile Nav -->
+    <div class="collapse navbar-collapse" id="mobileNav">
+      <div class="navbar-nav text-center py-3 d-lg-none">
+        <a class="nav-link" href="#hero">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#menu">Menu</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+<section class="hero-left d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- TEXT -->
+      <div class="col-md-6 tik-sub text-white">
+        <h1>Welcome To</h1>
+        <h1>
+  <span class="meow-heading">Sky's </span>
+  <span class="meow-heading">Sweets</span>
+</h1>
+
+        <h3 class="tik-sub">Where Handcrafted Dreams Meet Your Daily Cravings</h3>
+        <a href="#contact" class="btn btn-light btn-lg">Order Now</a>
+      </div>
+
+      <!-- EMPTY COLUMN (shows image) -->
+      <div class="col-md-6"></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- start of four sections -->
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- IMAGE LEFT -->
+      <div class="col-md-5 mb-3 mb-md-0">
+        <img 
+          src="images/sweet1.png" 
+          alt="Bakery" 
+          class="img-fluid rounded shadow"
+        >
+      </div>
+
+      <!-- TEXT RIGHT -->
+      <div class="col-md-6 text-center text-md-start">
+        <h2 class="meow-heading mb-4">Who We Are</h2>
+        <hr>
+        <p>
+          We bake using time-honored methods and thoughtfully selected, locally sourced ingredients to craft delicious, high-quality baked goods you can feel good about. From the way we knead our dough to the moment each pastry comes out of the oven, every step is guided by care, tradition, and a genuine love for the craft.</p>
+          <br>
+          <p>Our mission is simple: to create pastries that bring comfort, connection, and joy to our community. Each treat is made to feel like a warm hug—something familiar, uplifting, and shared with the people you love. In everything we do, we offer warmth, love, and kindness baked into every bite, because good food has the power to bring people together and brighten even the smallest moments.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- menu / what we offer section -->
+
+<section class="py-5 what-we-offer-section">
+  <div class="container">
+    <div class="text-center mb-5">
+
+    <!-- MENU SECTION -->
+<div class="mt-5" id="menu">
+  <h3 class="text-center meow-heading text-white mb-4">Menu & Pricing</h3>
+
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between bg-white" style="color: #a066d1;">
+          <span>Cupcakes</span><span>$3</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-white" style="color: #a066d1;">
+          <span>Mini Cakes</span><span>$4</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-white" style="color: #a066d1;">
+          <span>Cookies</span><span>$3</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-white" style="color: #a066d1;">
+          <span>Oreo</span><span>$2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-white" style="color: #a066d1;">
+          <span>Pretzels</span><span>$2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-white" style="color: #a066d1;">
+          <span>Peanut Butter Fudge</span><span>$8</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-white" style="color: #a066d1;">
+          <span>Brownies</span><span>$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-white" style="color: #a066d1;">
+          <span>Buckeyes (Half a Pound)</span><span>$8</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-white" style="color: #a066d1;">
+          <span>Cookie Tray</span><span>$25</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-white" style="color: #a066d1;">
+          <span>Stuffed Cookies</span><span>$8</span>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+
+<!-- GALLERY SECTION -->
+<section id="gallery" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center meow-heading mb-5">Our Products</h2>
+
+    <div class="row g-4 gallery-grid">
+
+      <!-- 12 Images -->
+      <div class="col-md-3">
+        <div class="gallery-item">
+          <img src="images/sweet1.png" class="img-fluid" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="gallery-item">
+          <img src="images/sweet2.png" class="img-fluid" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="gallery-item">
+          <img src="images/sweet3.png" class="img-fluid" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="gallery-item">
+          <img src="images/sweet4.png" class="img-fluid" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="gallery-item">
+          <img src="images/sweet5.png" class="img-fluid" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="gallery-item">
+          <img src="images/sweet6.png" class="img-fluid" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="gallery-item">
+          <img src="images/sweet7.png" class="img-fluid" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="gallery-item">
+          <img src="images/sweet8.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="gallery-item">
+          <img src="images/sweet9.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="gallery-item">
+          <img src="images/sweet10.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="gallery-item">
+          <img src="images/sweet11.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="gallery-item">
+          <img src="images/sweet12.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-5 contact-purple">
+  <div class="container">
+    <h2 class="text-center meow-heading mb-5 text-white">Contact Us</h2>
+
+    <div class="row g-4">
+
+      <!-- LEFT: CONTACT FORM -->
+      <div class="col-md-6">
+        <form class="contact-card p-4 shadow-lg rounded-4 bg-white">
+          <div class="mb-3">
+            <label class="form-label fw-bold text-purple">Name</label>
+            <input type="text" class="form-control rounded-3" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-bold text-purple">Email</label>
+            <input type="email" class="form-control rounded-3" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-bold text-purple">Message</label>
+            <textarea class="form-control rounded-3" rows="4" required></textarea>
+          </div>
+
+          <button class="btn btn-purple w-100 py-2 rounded-3 fw-bold">Send Message</button>
+        </form>
+      </div>
+
+      <!-- RIGHT: CONTACT DETAILS -->
+<div class="col-md-6 d-flex align-items-center">
+  <div class="ps-md-4 text-white contact-right-large">
+
+    <h4 class="fw-bold mb-4">Get In Touch</h4>
+
+    <p class="contact-item mb-3">
+      <i class="bi bi-telephone-fill icon"></i>
+      <a href="tel:4402958545" class="contact-link">Call or Text: 440-295-8545</a>
+    </p>
+
+    <p class="contact-item mb-3">
+      <i class="bi bi-envelope-fill icon"></i>
+      <a href="mailto:skylarkrieg@aol.com" class="contact-link">Email: skylarkrieg@aol.com</a>
+    </p>
+
+    <p class="contact-item mb-3">
+      <i class="bi bi-facebook icon"></i>
+      <a href="https://facebook.com/Skys_Sweets" target="_blank" class="contact-link">Facebook: Skys_Sweets</a>
+    </p>
+
+    <p class="contact-item mb-3">
+      <i class="bi bi-instagram icon"></i>
+      <a href="https://instagram.com/Skys_Sweets23" target="_blank" class="contact-link">Instagram: Skys_Sweets23</a>
+    </p>
+
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- back to top -->
+<a href="#" class="glass-back" id="backToTop">
+  <i class="bi bi-arrow-up"></i>
+</a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- back to top java -->
+<script>
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+  });
+</script>
+
+</body>
+</html>

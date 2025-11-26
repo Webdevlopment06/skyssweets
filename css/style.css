@@ -1,0 +1,223 @@
+
+
+/* FONTS */
+
+.meow-script-regular {
+  font-family: "Meow Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.tiktok-sans-<uniquifier> {
+  font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 5rem;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100;
+}
+
+.meow-heading{
+  font-family: "Meow Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem;
+}
+
+.tik-sub{
+  font-family: "TikTok Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.tiktok-heading{
+    font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100;
+}
+
+/* Navigation section */
+
+/* Right-side overhanging logo */
+.logo-center-right {
+  width: 140px;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}
+
+/* Make room for logo overhang */
+nav.navbar {
+  padding-bottom: 70px;
+}
+
+
+
+/* Hero class + attributes */
+.hero-left {
+  min-height: 90vh;
+  background: url('../images/sweetbg.png') no-repeat right center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.hero-left .text-white {
+  text-shadow: 1px 1px 7px rgba(0,0,0,0.45);
+}
+
+/* what we offer */
+.what-we-offer-section {
+  background-color: #a752c3;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Purple background for entire contact section */
+.contact-purple {
+  background-color: #a752c3;
+}
+
+/* Make all icons white */
+.contact-purple i {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Gallery styling */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+  height: 230px; /* Controls uniform image height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(112, 0, 112, 0.3); /* Subtle purple glow */
+}
+
+
+/* Purple background helper */
+.contact-purple {
+  background: #7a2cbf; /* Your purple */
+}
+
+/* Purple label + link color */
+.text-purple {
+  color: #7a2cbf;
+}
+
+/* Contact form card */
+.contact-card {
+  border: none;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+/* Purple button */
+.btn-purple {
+  background-color: #7a2cbf;
+  color: #fff;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.btn-purple:hover {
+  background-color: #5d1fa0;
+}
+
+/* Icons */
+.icon {
+  font-size: 1.4rem;
+  margin-right: 10px;
+  color: #ffd9ff; /* Soft pastel highlight */
+}
+
+/* Contact links */
+.contact-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #ffe4ff;
+}
+
+/* Contact item spacing */
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Larger contact text */
+.contact-right-large {
+  font-size: 1.25rem; /* Increase overall text */
+}
+
+/* Larger heading */
+.contact-right-large h4 {
+  font-size: 2rem;
+}
+
+/* Larger icons */
+.contact-right-large .icon {
+  font-size: 1.8rem;
+}
+
+/* Larger contact links */
+.contact-right-large .contact-link {
+  font-size: 1.25rem;
+}
+
+
+/* back to top */
+.glass-back {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0d6efd;
+  font-size: 26px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  opacity: 0;
+  transition: opacity .3s ease;
+  z-index: 999;
+}
+
+.glass-back.show {
+  opacity: 1;
+}
