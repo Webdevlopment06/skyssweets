@@ -72,6 +72,26 @@ nav.navbar {
 
 /* Hero section starts */
 
+.hero-left {
+  /* Set a minimum height for the section */
+  min-height: 90vh;
+  position: relative;
+  /* Applying the background image and cover property */
+  background: url('../images/cookiebanner.png') center center/cover no-repeat; /* Replace 'sweetbg.png' with your image filename and correct path */
+  /* Optional: Add a subtle overlay for better text contrast */
+  background-color: rgba(0, 0, 0, 0.4); /* Darkens the image slightly */
+  background-blend-mode: overlay; /* Blends the color with the image */
+}
+
+/* Ensure the text is readable over the image */
+.hero-left .text-white {
+  /* This text shadow greatly improves readability over busy image backgrounds */
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.9);
+  /* The z-index is crucial to make sure the text is on top of the background */
+  position: relative;
+  z-index: 2;
+}
+
 .hero-full-bg {
   /* This ensures the section spans the viewport height and positions children absolutely */
   min-height: 90vh; /* Keeps the large height from the original CSS */
@@ -101,39 +121,10 @@ nav.navbar {
 }
 
 
-/* Make the carousel cover the entire background */
-#heroCarousel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1; /* Keep it below the text */
-}
 
-/* Ensure images fill the carousel without distortion (optional, but recommended) */
-#heroCarousel .carousel-item img {
-  object-fit: cover; 
-  height: 90vh; /* Match the height of the section */
-}
-
-/* Text Overlay positioning */
-.hero-content-overlay {
-  position: absolute; /* Allows text to float over the carousel */
-  top: 50%; /* Center vertically */
-  left: 50%;
-  transform: translate(-50%, -50%); /* Fine-tune centering */
-  z-index: 2; /* Ensure text is visible over the carousel */
-  width: 100%; /* Ensure it respects container width rules */
-}
-
-/* Re-apply text shadow for readability over busy image backgrounds */
-.hero-content-overlay .text-white {
-  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.7); 
-}
 /* what we offer */
 .what-we-offer-section {
-  background-color: #a752c3;
+  background-color: #f785a6;
 }
 
 .text-white-50 {
@@ -142,7 +133,7 @@ nav.navbar {
 
 /* Purple background for entire contact section */
 .contact-purple {
-  background-color: #a752c3;
+  background-color: #f785a6;
 }
 
 /* Make all icons white */
