@@ -5,47 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sky's Sweets</title>
 
-<!-- Bootstrap 5 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
-<!-- Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
 </head>
 <body>
-<!-- content starts here -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm position-relative">
-  <div class="container position-relative">
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-1 shadow-sm position-relative overhang-nav">
+  <div class="container d-flex align-items-center">
 
-    <!-- Left Links -->
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
     <div class="navbar-nav d-none d-lg-flex">
       <a class="nav-link px-3" href="#hero">Home</a>
       <a class="nav-link px-3" href="#about">About</a>
       <a class="nav-link px-3" href="#menu">Menu</a>
     </div>
 
-    <!-- Right-Side Overhanging Logo -->
-    <a class="navbar-brand position-absolute top-100 end-0 translate-middle-y me-3" href="#hero">
-      <img src="images/skyslogo.png" alt="Bakery Logo" class="logo-center-right">
+    <a class="navbar-brand logo-fixed-position" href="#hero">
+      <img src="images/skyslogo.png" alt="Bakery Logo" class="logo-overhang">
     </a>
 
-    <!-- Right Links -->
     <div class="navbar-nav d-none d-lg-flex ms-auto me-5">
       <a class="nav-link px-3" href="#gallery">Gallery</a>
       <a class="nav-link px-3" href="#contact">Contact</a>
     </div>
-
-    <!-- Mobile Toggle -->
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Mobile Nav -->
-    <div class="collapse navbar-collapse" id="mobileNav">
+    
+    <div class="collapse navbar-collapse position-absolute top-100 start-0 w-100 bg-white shadow-sm" id="mobileNav">
       <div class="navbar-nav text-center py-3 d-lg-none">
         <a class="nav-link" href="#hero">Home</a>
         <a class="nav-link" href="#about">About</a>
@@ -59,12 +50,10 @@
 </nav>
 
 
-<!-- HERO SECTION -->
 <section class="hero-left d-flex align-items-center">
   <div class="container">
     <div class="row align-items-center">
       
-      <!-- TEXT -->
       <div class="col-md-6 tik-sub text-white">
         <h1>Welcome To</h1>
         <h1>
@@ -80,21 +69,16 @@
 </a>
       </div>
 
-      <!-- EMPTY COLUMN (shows image) -->
       <div class="col-md-6"></div>
 
     </div>
   </div>
 </section>
 
-<!-- start of four sections -->
-
-<!-- ABOUT SECTION -->
 <section id="about" class="py-5 bg-light">
   <div class="container">
     <div class="row align-items-center">
 
-      <!-- IMAGE LEFT -->
       <div class="col-md-5 mb-3 mb-md-0">
         <img 
           src="images/sweet1.png" 
@@ -103,12 +87,11 @@
         >
       </div>
 
-      <!-- TEXT RIGHT -->
       <div class="col-md-6 text-center text-md-start">
         <h2 class="meow-heading mb-4">Who We Are</h2>
         <hr>
         <p>
-          We bake using time-honored methods and thoughtfully selected, locally sourced ingredients to craft delicious, high-quality baked goods you can feel good about. From the way we knead our dough to the moment each pastry comes out of the oven, every step is guided by care, tradition, and a genuine love for the craft.</p>
+          We bake using time-honored methods and thoughtfully selected, locally sourced ingredients to craft delicious, high-quality baked goods you can feel good about.</p>
           <br>
           <p>Our mission is simple: to create pastries that bring comfort, connection, and joy to our community. Each treat is made to feel like a warm hug—something familiar, uplifting, and shared with the people you love. In everything we do, we offer warmth, love, and kindness baked into every bite, because good food has the power to bring people together and brighten even the smallest moments.</p>
       </div>
@@ -199,7 +182,6 @@
   </div>
 </section>
 
-<!-- HOLIDAY HERO SECTION -->
 <section id="holiday-hero" 
          class="holiday-hero d-flex align-items-center justify-content-center text-center text-white">
   <div class="bg-dark bg-opacity-50 p-4 rounded-4">
@@ -210,7 +192,6 @@
 
 
 
-<!-- HOLIDAY MENU BUTTONS -->
 <section id="holiday-menu" class="py-5 what-we-offer-section">
   <div class="container">
 
@@ -218,7 +199,6 @@
 
     <div class="row text-center g-4 justify-content-center">
 
-      <!-- SMALL -->
       <div class="col-md-4">
         <button class="btn w-100 py-4 shadow-lg rounded-4 fw-bold" 
                 style="background:white; color:#f785a6; font-size:1.4rem;">
@@ -228,7 +208,6 @@
         </button>
       </div>
 
-      <!-- MEDIUM -->
       <div class="col-md-4">
         <button class="btn w-100 py-4 shadow-lg rounded-4 fw-bold" 
                 style="background:white; color:#f785a6; font-size:1.4rem;">
@@ -238,7 +217,6 @@
         </button>
       </div>
 
-      <!-- LARGE -->
       <div class="col-md-4">
         <button class="btn w-100 py-4 shadow-lg rounded-4 fw-bold" 
                 style="background:white; color:#f785a6; font-size:1.4rem;">
@@ -255,14 +233,12 @@
 
 
 
-<!-- COOKIE ICON GRID -->
 <section id="cookie-varieties" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center meow-heading mb-5">Cookie Varieties</h2>
 
     <div class="row text-center g-4">
 
-      <!-- Each item — replace icon images as needed -->
       <div class="col-6 col-md-3">
         <div class="p-3 bg-white shadow-sm rounded-4">
           <img src="images/pbcookie.png" class="img-fluid mb-2 cookie-icon">
@@ -338,14 +314,12 @@
 </section>
 
 
-<!-- GALLERY SECTION -->
 <section id="gallery" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center meow-heading mb-5">Our Products</h2>
 
     <div class="row g-4 gallery-grid">
 
-      <!-- 12 Images -->
       <div class="col-md-3">
         <div class="gallery-item">
           <img src="images/sweet1.png" class="img-fluid" alt="">
@@ -423,14 +397,12 @@
 </section>
 
 
-<!-- CONTACT SECTION -->
 <section id="contact" class="py-5 contact-purple">
   <div class="container">
     <h2 class="text-center meow-heading mb-5 text-white">Contact Us</h2>
 
     <div class="row g-4">
 
-      <!-- LEFT: WELCOME MESSAGE + BUTTON -->
       <div class="col-md-6 d-flex align-items-center">
         <div class="contact-card p-4 shadow-lg rounded-4 bg-white">
 
@@ -457,7 +429,6 @@
         </div>
       </div>
 
-      <!-- RIGHT: CONTACT DETAILS -->
       <div class="col-md-6 d-flex align-items-center">
         <div class="ps-md-4 text-white contact-right-large">
 
@@ -498,15 +469,12 @@
 
 
 
-<!-- back to top -->
 <a href="#" class="glass-back" id="backToTop">
   <i class="bi bi-arrow-up"></i>
 </a>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- back to top java -->
 <script>
   const backToTop = document.getElementById("backToTop");
 
