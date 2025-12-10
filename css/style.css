@@ -52,25 +52,85 @@
   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
 }
 
+/* 👈 TARGET THIS CLASS: Increase Z-Index and adjust positioning */
+.navbar-brand {
+  /* Ensure the logo is above everything else, including the hero section (z-index: 2) */
+  z-index: 10; 
+  /* Push it further down. 100% moves it to the bottom edge of the nav,
+     then translate-middle-y moves it up by half its height. We push it 
+     down even more to overlap the hero section. */
+  top: 150% !important; 
+}
+
+
 /* Make room for logo overhang */
 nav.navbar {
+  /* This padding is crucial to push the content down, but we don't need 
+     to increase it unless the logo size increases. */
   padding-bottom: 70px;
 }
 
+/* Hero section starts */
 
-
-/* Hero class + attributes */
-.hero-left {
-  min-height: 90vh;
-  background: url('../images/sweetbg.png') no-repeat right center;
-  background-size: cover;
-  padding: 60px 0;
+.hero-full-bg {
+  /* This ensures the section spans the viewport height and positions children absolutely */
+  min-height: 90vh; /* Keeps the large height from the original CSS */
+  position: relative; 
+  /* Removing original background: url('../images/sweetbg.png')... */
 }
 
-.hero-left .text-white {
-  text-shadow: 1px 1px 7px rgba(0,0,0,0.45);
+/* Style for the "Order Now" button */
+.btn-light.btn-lg {
+  /* Keep the background white (default for Bootstrap .btn-light) */
+  background-color: #fff !important; 
+  border-color: #fff !important; /* Ensure the border is also white */
+
+  /* Change the text color to a nice pink */
+  color: #ff69b4 !important; /* Using Hot Pink as an example */
+  
+  /* Add a subtle shadow for better contrast against potentially white areas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
+/* Optional: Hover effect to make it interactive */
+.btn-light.btn-lg:hover {
+  background-color: #f8f9fa !important; /* Slightly off-white on hover */
+  color: #e64998 !important; /* Slightly darker pink on hover */
+  border-color: #f8f9fa !important; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Make the carousel cover the entire background */
+#heroCarousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Keep it below the text */
+}
+
+/* Ensure images fill the carousel without distortion (optional, but recommended) */
+#heroCarousel .carousel-item img {
+  object-fit: cover; 
+  height: 90vh; /* Match the height of the section */
+}
+
+/* Text Overlay positioning */
+.hero-content-overlay {
+  position: absolute; /* Allows text to float over the carousel */
+  top: 50%; /* Center vertically */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Fine-tune centering */
+  z-index: 2; /* Ensure text is visible over the carousel */
+  width: 100%; /* Ensure it respects container width rules */
+}
+
+/* Re-apply text shadow for readability over busy image backgrounds */
+.hero-content-overlay .text-white {
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.7); 
+}
 /* what we offer */
 .what-we-offer-section {
   background-color: #a752c3;
@@ -221,3 +281,34 @@ nav.navbar {
 .glass-back.show {
   opacity: 1;
 }
+
+.holiday-hero {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.holiday-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../images/holidayhero.png') center/cover no-repeat;
+    opacity: 0.6;     /* ← your 60% background opacity */
+    z-index: 1;
+}
+
+.holiday-hero > * {
+    position: relative;
+    z-index: 2;        /* ensures text stays above the background */
+}
+
+
+
+.cookie-icon {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
