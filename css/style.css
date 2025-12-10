@@ -1,5 +1,3 @@
-
-
 /* FONTS */
 
 .meow-script-regular {
@@ -45,30 +43,80 @@
 
 /* Navigation section */
 
-/* Right-side overhanging logo */
-.logo-center-right {
+.logo-overhang {
   width: 140px;
   height: auto;
   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
 }
 
-/* 👈 TARGET THIS CLASS: Increase Z-Index and adjust positioning */
-.navbar-brand {
-  /* Ensure the logo is above everything else, including the hero section (z-index: 2) */
-  z-index: 10; 
-  /* Push it further down. 100% moves it to the bottom edge of the nav,
-     then translate-middle-y moves it up by half its height. We push it 
-     down even more to overlap the hero section. */
-  top: 150% !important; 
+/* Base style for absolute logo positioning (used for both mobile and desktop overhang) */
+.overhang-nav .logo-fixed-position {
+    position: absolute !important;
+    top: 100%; /* Default position: immediately below the navbar */
+    transform: translateY(-50%); /* Pull it up by half its height for the overhang effect */
+    z-index: 10;
+}
+
+/* ---------------------------------- */
+/* 1. MOBILE OVERHANG (MAX-WIDTH 991.98px) - Overhang to the RIGHT */
+/* ---------------------------------- */
+@media (max-width: 991.98px) {
+  
+  /* Logo Positioning: Right-aligned overhang */
+  .overhang-nav .logo-fixed-position {
+    /* Right side alignment */
+    right: 1rem; 
+    left: auto;
+  }
+  
+  /* Logo Size adjustment for mobile */
+  .logo-overhang {
+    width: 100px;
+  }
+  
+  /* Navbar Padding to account for the logo's space (optional) */
+  .overhang-nav {
+    /* Reduced padding for a shorter overall bar */
+    padding-bottom: 20px !important; 
+  }
+  
+  /* Ensure mobile nav dropdown is correct */
+  .navbar-collapse {
+      width: 100%;
+      left: 0;
+      right: 0;
+      z-index: 9;
+  }
+}
+
+/* ---------------------------------- */
+/* 2. DESKTOP OVERHANG (MIN-WIDTH 992px) - Overhang CENTERED */
+/* ---------------------------------- */
+@media (min-width: 992px) { 
+  
+  /* Logo Positioning: Center-aligned overhang */
+  .overhang-nav .logo-fixed-position {
+    /* Center horizontal alignment */
+    left: 50%;
+    right: auto;
+    /* Translate X: -50% centers it horizontally based on its own width */
+    transform: translate(-50%, -50%); 
+  }
+  
+  /* Logo Size adjustment for desktop */
+  .logo-overhang {
+    width: 140px;
+  }
+  
+  /* Navbar Padding to account for the logo's space */
+  .overhang-nav {
+    /* Reduced padding for a shorter overall bar */
+    padding-bottom: 45px !important; 
+  }
 }
 
 
-/* Make room for logo overhang */
-nav.navbar {
-  /* This padding is crucial to push the content down, but we don't need 
-     to increase it unless the logo size increases. */
-  padding-bottom: 70px;
-}
+
 
 /* Hero section starts */
 
@@ -301,7 +349,3 @@ nav.navbar {
     object-fit: cover;
     border-radius: 50%;
 }
-
-
-
-
