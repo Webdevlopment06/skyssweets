@@ -78,9 +78,6 @@ nav.navbar {
   position: relative;
   /* Applying the background image and cover property */
   background: url('../images/cookiebanner.png') center center/cover no-repeat; /* Replace 'sweetbg.png' with your image filename and correct path */
-  /* Optional: Add a subtle overlay for better text contrast */
-  background-color: rgba(0, 0, 0, 0.4); /* Darkens the image slightly */
-   /* Blends the color with the image */
 }
 
 /* Ensure the text is readable over the image */
@@ -301,5 +298,6 @@ nav.navbar {
     object-fit: cover;
     border-radius: 50%;
 }
+
 
 
