@@ -188,6 +188,18 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.btn-custom-pink {
+    background-color: #f785a6;
+    border-color: #f785a6;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-pink:hover {
+    background-color: #d66d8b; /* A slightly darker shade for the hover effect */
+    border-color: #d66d8b;
+    color: white;
+}
+
 /* ==========================================================================
    5. GALLERY
    ========================================================================== */
@@ -326,3 +338,4 @@
 .glass-back.show {
   opacity: 1;
 }
+
