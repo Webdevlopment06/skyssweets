@@ -320,25 +320,17 @@
 .glass-back.show {
   opacity: 1;
 }
-
-.holiday-hero {
-    position: relative;
-    height: 60vh;
-    overflow: hidden;
+/* Holiday cookie hero sections */
+.christmas-holiday-hero { position: relative; height: 60vh; overflow: hidden; }
+.christmas-holiday-hero::before { content: ""; position: absolute; inset: 0; background: url('../images/holidayhero.png') center/cover no-repeat;
+    opacity: 0.6;     /* ← your 60% background opacity */ z-index: 1; }
+.christmas-holiday-hero > * { position: relative; z-index: 2;        /* ensures text stays above the background */
 }
 
-.holiday-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url('../images/holidayhero.png') center/cover no-repeat;
-    opacity: 0.6;     /* ← your 60% background opacity */
-    z-index: 1;
-}
-
-.holiday-hero > * {
-    position: relative;
-    z-index: 2;        /* ensures text stays above the background */
+.v-day-holiday-hero { position: relative; height: 60vh; overflow: hidden; }
+.v-day-holiday-hero::before { content: ""; position: absolute; inset: 0; background: url('../images/holidayhero.png') center/cover no-repeat;
+    opacity: 0.6;     /* ← your 60% background opacity */ z-index: 1; }
+.v-day-holiday-hero > * { position: relative; z-index: 2;        /* ensures text stays above the background */
 }
 
 
@@ -349,3 +341,4 @@
     object-fit: cover;
     border-radius: 50%;
 }
+
