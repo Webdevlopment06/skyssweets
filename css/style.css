@@ -199,7 +199,22 @@
     border-color: #d66d8b;
     color: white;
 }
+.btn-custom-pink {
+    background-color: #f785a6;
+    border-color: #f785a6;
+    transition: all 0.3s ease;
+}
 
+.btn-custom-white:hover {
+    background-color: #f8f8f8; /* A slightly darker shade for the hover effect */
+    border-color: #f8f8f8f;
+    color: #d66d8b;
+}
+.btn-custom-white {
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+    transition: all 0.3s ease;
+}
 /* ==========================================================================
    5. GALLERY
    ========================================================================== */
@@ -338,4 +353,5 @@
 .glass-back.show {
   opacity: 1;
 }
+
 
