@@ -1,4 +1,6 @@
-/* FONTS */
+/* ==========================================================================
+   1. FONTS & TYPOGRAPHY
+   ========================================================================== */
 
 .meow-script-regular {
   font-family: "Meow Script", cursive;
@@ -6,171 +8,163 @@
   font-style: normal;
 }
 
-
-.tiktok-sans-<uniquifier> {
-  font-family: "TikTok Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 5rem;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "wdth" 100;
-}
-
-.meow-heading{
+.meow-heading {
   font-family: "Meow Script", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 6rem;
 }
 
-.tik-sub{
+.tiktok-sans-<uniquifier> {
+  font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 5rem;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100;
+}
+
+.tiktok-heading {
+  font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100;
+}
+
+.tik-sub {
   font-family: "TikTok Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
 }
 
-.tiktok-heading{
-    font-family: "TikTok Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "wdth" 100;
-}
-
-/* Navigation section */
+/* ==========================================================================
+   2. NAVIGATION & LOGO OVERHANG
+   ========================================================================== */
 
 .logo-overhang {
   width: 140px;
   height: auto;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
-/* Base style for absolute logo positioning (used for both mobile and desktop overhang) */
+/* Base style for absolute logo positioning */
 .overhang-nav .logo-fixed-position {
-    position: absolute !important;
-    top: 100%; /* Default position: immediately below the navbar */
-    transform: translateY(-50%); /* Pull it up by half its height for the overhang effect */
-    z-index: 10;
+  position: absolute !important;
+  top: 100%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
-/* ---------------------------------- */
-/* 1. MOBILE OVERHANG (MAX-WIDTH 991.98px) - Overhang to the RIGHT */
-/* ---------------------------------- */
+/* MOBILE OVERHANG (MAX-WIDTH 991.98px) - Overhang to the RIGHT */
 @media (max-width: 991.98px) {
-  
-  /* Logo Positioning: Right-aligned overhang */
   .overhang-nav .logo-fixed-position {
-    /* Right side alignment */
-    right: 1rem; 
+    right: 1rem;
     left: auto;
   }
-  
-  /* Logo Size adjustment for mobile */
+
   .logo-overhang {
     width: 100px;
   }
-  
-  /* Navbar Padding to account for the logo's space (optional) */
+
   .overhang-nav {
-    /* Reduced padding for a shorter overall bar */
-    padding-bottom: 20px !important; 
+    padding-bottom: 20px !important;
   }
-  
-  /* Ensure mobile nav dropdown is correct */
+
   .navbar-collapse {
-      width: 100%;
-      left: 0;
-      right: 0;
-      z-index: 9;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9;
   }
 }
 
-/* ---------------------------------- */
-/* 2. DESKTOP OVERHANG (MIN-WIDTH 992px) - Overhang CENTERED */
-/* ---------------------------------- */
-@media (min-width: 992px) { 
-  
-  /* Logo Positioning: Center-aligned overhang */
+/* DESKTOP OVERHANG (MIN-WIDTH 992px) - Overhang CENTERED */
+@media (min-width: 992px) {
   .overhang-nav .logo-fixed-position {
-    /* Center horizontal alignment */
     left: 50%;
     right: auto;
-    /* Translate X: -50% centers it horizontally based on its own width */
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
   }
-  
-  /* Logo Size adjustment for desktop */
+
   .logo-overhang {
     width: 140px;
   }
-  
-  /* Navbar Padding to account for the logo's space */
+
   .overhang-nav {
-    /* Reduced padding for a shorter overall bar */
-    padding-bottom: 45px !important; 
+    padding-bottom: 45px !important;
   }
 }
 
-
-
-
-/* Hero section starts */
+/* ==========================================================================
+   3. HERO SECTIONS
+   ========================================================================== */
 
 .hero-left {
-  /* Set a minimum height for the section */
   min-height: 90vh;
   position: relative;
-  /* Applying the background image and cover property */
-  background: url('../images/cookiebanner.png') center center/cover no-repeat; /* Replace 'sweetbg.png' with your image filename and correct path */
-  /* Optional: Add a subtle overlay for better text contrast */
-  background-color: rgba(0, 0, 0, 0.4); /* Darkens the image slightly */
-   /* Blends the color with the image */
+  background: url('../images/cookiebanner.png') center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Ensure the text is readable over the image */
 .hero-left .text-white {
-  /* This text shadow greatly improves readability over busy image backgrounds */
   text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.9);
-  /* The z-index is crucial to make sure the text is on top of the background */
   position: relative;
   z-index: 2;
 }
 
 .hero-full-bg {
-  /* This ensures the section spans the viewport height and positions children absolutely */
-  min-height: 90vh; /* Keeps the large height from the original CSS */
-  position: relative; 
-  /* Removing original background: url('../images/sweetbg.png')... */
+  min-height: 90vh;
+  position: relative;
 }
 
-/* Style for the "Order Now" button */
-.btn-light.btn-lg {
-  /* Keep the background white (default for Bootstrap .btn-light) */
-  background-color: #fff !important; 
-  border-color: #fff !important; /* Ensure the border is also white */
-
-  /* Change the text color to a nice pink */
-  color: #ff69b4 !important; /* Using Hot Pink as an example */
-  
-  /* Add a subtle shadow for better contrast against potentially white areas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+/* Holiday cookie hero sections */
+.christmas-holiday-hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
 }
 
-/* Optional: Hover effect to make it interactive */
-.btn-light.btn-lg:hover {
-  background-color: #f8f9fa !important; /* Slightly off-white on hover */
-  color: #e64998 !important; /* Slightly darker pink on hover */
-  border-color: #f8f9fa !important; 
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.christmas-holiday-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('../images/holidayhero.png') center/cover no-repeat;
+  opacity: 0.6;
+  z-index: 1;
 }
 
+.christmas-holiday-hero > * {
+  position: relative;
+  z-index: 2;
+}
 
+/* ==========================================================================
+   4. CONTENT & LAYOUT COMPONENTS
+   ========================================================================== */
 
-/* what we offer */
+.split-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 300px;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.cookie-icon {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* What We Offer */
 .what-we-offer-section {
   background-color: #f785a6;
 }
@@ -179,27 +173,34 @@
   color: rgba(255, 255, 255, 0.85) !important;
 }
 
-/* Purple background for entire contact section */
-.contact-purple {
-  background-color: #f785a6;
+/* Buttons */
+.btn-light.btn-lg {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #ff69b4 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Make all icons white */
-.contact-purple i {
-  color: #fff;
-  font-size: 1.2rem;
+.btn-light.btn-lg:hover {
+  background-color: #f8f9fa !important;
+  color: #e64998 !important;
+  border-color: #f8f9fa !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Gallery styling */
+/* ==========================================================================
+   5. GALLERY
+   ========================================================================== */
+
 .gallery-item {
   overflow: hidden;
   border-radius: 12px;
-  height: 230px; /* Controls uniform image height */
+  height: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -216,28 +217,37 @@
 
 .gallery-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(112, 0, 112, 0.3); /* Subtle purple glow */
+  box-shadow: 0 6px 20px rgba(112, 0, 112, 0.3);
 }
 
+/* ==========================================================================
+   6. CONTACT SECTION
+   ========================================================================== */
 
-/* Purple background helper */
 .contact-purple {
-  background: #7a2cbf; /* Your purple */
+  background-color: #f785a6; /* Note: first instance color */
 }
 
-/* Purple label + link color */
+/* Re-declaration with different color from original file */
+.contact-purple {
+  background: #7a2cbf;
+}
+
+.contact-purple i {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
 .text-purple {
   color: #7a2cbf;
 }
 
-/* Contact form card */
 .contact-card {
   border: none;
   background: #ffffff;
   border-radius: 16px;
 }
 
-/* Purple button */
 .btn-purple {
   background-color: #7a2cbf;
   color: #fff;
@@ -249,14 +259,12 @@
   background-color: #5d1fa0;
 }
 
-/* Icons */
 .icon {
   font-size: 1.4rem;
   margin-right: 10px;
-  color: #ffd9ff; /* Soft pastel highlight */
+  color: #ffd9ff;
 }
 
-/* Contact links */
 .contact-link {
   text-decoration: none;
   color: #ffffff;
@@ -268,41 +276,39 @@
   color: #ffe4ff;
 }
 
-/* Contact item spacing */
 .contact-item {
   display: flex;
   align-items: center;
 }
 
-/* Larger contact text */
+/* Contact Variation: Large */
 .contact-right-large {
-  font-size: 1.25rem; /* Increase overall text */
+  font-size: 1.25rem;
 }
 
-/* Larger heading */
 .contact-right-large h4 {
   font-size: 2rem;
 }
 
-/* Larger icons */
 .contact-right-large .icon {
   font-size: 1.8rem;
 }
 
-/* Larger contact links */
 .contact-right-large .contact-link {
   font-size: 1.25rem;
 }
 
+/* ==========================================================================
+   7. BACK TO TOP & UTILITIES
+   ========================================================================== */
 
-/* back to top */
 .glass-back {
   position: fixed;
   bottom: 25px;
   right: 25px;
   width: 55px;
   height: 55px;
-  background: rgba(255,255,255,0.35);
+  background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(10px);
   border-radius: 50%;
   display: flex;
@@ -311,34 +317,12 @@
   color: #0d6efd;
   font-size: 26px;
   text-decoration: none;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   opacity: 0;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
   z-index: 999;
 }
 
 .glass-back.show {
   opacity: 1;
 }
-/* Holiday cookie hero sections */
-.christmas-holiday-hero { position: relative; height: 60vh; overflow: hidden; }
-.christmas-holiday-hero::before { content: ""; position: absolute; inset: 0; background: url('../images/holidayhero.png') center/cover no-repeat;
-    opacity: 0.6;     /* ← your 60% background opacity */ z-index: 1; }
-.christmas-holiday-hero > * { position: relative; z-index: 2;        /* ensures text stays above the background */
-}
-
-.v-day-holiday-hero { position: relative; height: 60vh; overflow: hidden; }
-.v-day-holiday-hero::before { content: ""; position: absolute; inset: 0; background: url('../images/holidayhero.png') center/cover no-repeat;
-    opacity: 0.6;     /* ← your 60% background opacity */ z-index: 1; }
-.v-day-holiday-hero > * { position: relative; z-index: 2;        /* ensures text stays above the background */
-}
-
-
-
-.cookie-icon {
-    height: 70px;
-    width: 70px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
