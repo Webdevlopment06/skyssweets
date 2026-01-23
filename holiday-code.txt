@@ -1,1 +1,130 @@
+<!-- christmas holiday section uncomment for christmas <section id="holiday-hero" 
+         class="holiday-hero d-flex align-items-center justify-content-center text-center text-white">
+  <div class="bg-dark bg-opacity-50 p-4 rounded-4">
+    <h1 class="meow-heading display-4">Holiday Cookie Trays</h1>
+    <p class="tik-sub fs-4">Festive. Fresh. Handcrafted for the Holidays.</p>
+  </div>
+</section>
 
+
+
+<section id="holiday-menu" class="py-5 what-we-offer-section">
+  <div class="container">
+
+    <h2 class="text-center text-white meow-heading mb-5">Holiday Cookie Tray Prices</h2>
+
+    <div class="row text-center g-4 justify-content-center">
+
+      <div class="col-md-4">
+        <button class="btn w-100 py-4 shadow-lg rounded-4 fw-bold" 
+                style="background:white; color:#f785a6; font-size:1.4rem;">
+          Small Tray <br>
+          <span class="fw-normal" style="font-size:1rem;">16 Cookies · Up to 4 Varieties</span><br>
+          $25
+        </button>
+      </div>
+
+      <div class="col-md-4">
+        <button class="btn w-100 py-4 shadow-lg rounded-4 fw-bold" 
+                style="background:white; color:#f785a6; font-size:1.4rem;">
+          Medium Tray <br>
+          <span class="fw-normal" style="font-size:1rem;">32 Cookies · Up to 6 Varieties</span><br>
+          $50
+        </button>
+      </div>
+
+      <div class="col-md-4">
+        <button class="btn w-100 py-4 shadow-lg rounded-4 fw-bold" 
+                style="background:white; color:#f785a6; font-size:1.4rem;">
+          Large Tray <br>
+          <span class="fw-normal" style="font-size:1rem;">48 Cookies · Up to 8 Varieties</span><br>
+          $75
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="cookie-varieties" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center meow-heading mb-5">Cookie Varieties</h2>
+
+    <div class="row text-center g-4">
+
+      <div class="col-6 col-md-3">
+        <div class="p-3 bg-white shadow-sm rounded-4">
+          <img src="images/pbcookie.png" class="img-fluid mb-2 cookie-icon">
+          <p class="fw-bold" style="color:#f785a6;">Nutella Stuffed Cookies</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="p-3 bg-white shadow-sm rounded-4">
+          <img src="images/cutoutcookie.png" class="img-fluid mb-2 cookie-icon">
+          <p class="fw-bold" style="color:#f785a6;">Cut-Out Cookies</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="p-3 bg-white shadow-sm rounded-4">
+          <img src="images/candycane.png" class="img-fluid mb-2 cookie-icon">
+          <p class="fw-bold" style="color:#f785a6;">Candy Cane Whoopie Pies</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="p-3 bg-white shadow-sm rounded-4">
+          <img src="images/grinch.png" class="img-fluid mb-2 cookie-icon">
+          <p class="fw-bold" style="color:#f785a6;">Grinch Cookies</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="p-3 bg-white shadow-sm rounded-4">
+          <img src="images/choccrinkle.png" class="img-fluid mb-2 cookie-icon">
+          <p class="fw-bold" style="color:#f785a6;">Chocolate Crinkle</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="p-3 bg-white shadow-sm rounded-4">
+          <img src="images/kiss.png" class="img-fluid mb-2 cookie-icon">
+          <p class="fw-bold" style="color:#f785a6;">Peanut Butter Blossom</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="p-3 bg-white shadow-sm rounded-4">
+          <img src="images/tree.png" class="img-fluid mb-2 cookie-icon">
+          <p class="fw-bold" style="color:#f785a6;">Sugar Cookie Trees</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="p-3 bg-white shadow-sm rounded-4">
+          <img src="images/everything.png" class="img-fluid mb-2 cookie-icon">
+          <p class="fw-bold" style="color:#f785a6;">Everything Cookies</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="p-3 bg-white shadow-sm rounded-4">
+          <img src="images/andes.png" class="img-fluid mb-2 cookie-icon">
+          <p class="fw-bold" style="color:#f785a6;">Andes Chip Cookies</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="p-3 bg-white shadow-sm rounded-4">
+          <img src="images/chocstuffed.png" class="img-fluid mb-2 cookie-icon">
+          <p class="fw-bold" style="color:#f785a6;">Chocolate Chip Stuffed</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>  end of christmas holiday section -->
